@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { DxSelectBoxModule } from 'devextreme-angular';
+import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
 
 
 @NgModule({
