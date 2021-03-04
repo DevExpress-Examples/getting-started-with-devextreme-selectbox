@@ -7,6 +7,7 @@
       :search-enabled="true"
       @value-changed="onValueChange"
       :grouped="true"
+      :drop-down-options="dropDownOptions"
     />
   </div>
 </template>
@@ -30,7 +31,10 @@ export default {
                     key: 'ID',
                 },
                 group: "Category"
-            })
+            }),
+            dropDownOptions: {
+                height: 150,
+            }
         }
     },
     methods: {

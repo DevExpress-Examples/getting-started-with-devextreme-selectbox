@@ -15,7 +15,11 @@ const dataSource = new DataSource({
         key: 'ID'
     },
     group: "Category"
-})
+});
+
+const dropDownOptions = {
+    height: 150,
+  },
 
 class App extends React.Component {
     onValueChanged(e) {
@@ -33,6 +37,7 @@ class App extends React.Component {
                     searchEnabled={true}
                     onValueChanged={this.onValueChanged}
                     grouped={true}
+                    dropDownOptions={dropDownOptions}
                 />
             </div>
         );        

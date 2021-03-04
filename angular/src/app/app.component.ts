@@ -11,6 +11,7 @@ import { AppService, Item } from './app.service';
 export class AppComponent {
     dataSource: DataSource;
     data: Item[];
+    dropDownOptions: any;
 
     constructor(service: AppService) {
         this.data = service.getItems();
@@ -23,6 +24,9 @@ export class AppComponent {
             },
             group: "Category"
         });
+        this.dropDownOptions = {
+            height: 150,
+          },
     }
 
     onValueChanged(e) {
