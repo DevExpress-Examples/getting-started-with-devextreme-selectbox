@@ -14,13 +14,17 @@ const dataSource = new DataSource({
         type: 'array',
         key: 'ID'
     },
-    group: "Category"
-})
+    group: 'Category'
+});
+
+const dropDownOptions = {
+    height: 150
+};
 
 class App extends React.Component {
     onValueChanged(e) {
-        const item = data.filter(i => i.ID === e.value)[0];
-        console.log(item.ID + ": " + item.Name);
+        const item = data.filter((i) => i.ID === e.value)[0];
+        console.log(item.ID + ': ' + item.Name);
     }
 
     render() {
@@ -33,9 +37,10 @@ class App extends React.Component {
                     searchEnabled={true}
                     onValueChanged={this.onValueChanged}
                     grouped={true}
+                    dropDownOptions={dropDownOptions}
                 />
             </div>
-        );        
+        );
     }
 }
 

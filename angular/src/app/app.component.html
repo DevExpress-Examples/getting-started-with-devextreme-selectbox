@@ -1,8 +1,9 @@
-<dx-select-box 
+<dx-select-box
     [dataSource]="dataSource"
     valueExpr="ID"
     displayExpr="Name"
     searchEnabled="true"
     (onValueChanged)="onValueChanged($event)"
-    grouped="true">
+    grouped="true"
+    [dropDownOptions]="dropDownOptions">
 </dx-select-box>
