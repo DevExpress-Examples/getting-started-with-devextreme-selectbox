@@ -39,8 +39,8 @@ export default {
     },
     methods: {
         onValueChange(e) {
-            const item = data.filter((i) => i.ID === e.value)[0];
-            console.log(item.ID + ': ' + item.Name);
+            console.log(e.previousValue);
+            console.log(e.value);
         }
     }
 };
