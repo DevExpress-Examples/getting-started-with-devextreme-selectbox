@@ -1,3 +1,5 @@
+import { useCallback } from 'react';
+
 import 'devextreme/dist/css/dx.common.css';
 import 'devextreme/dist/css/dx.light.css';
 import React from 'react';
@@ -21,27 +23,26 @@ const dropDownOptions = {
     height: 150
 };
 
-class App extends React.Component {
-    onValueChanged(e) {
-        const item = data.filter((i) => i.ID === e.value)[0];
-        console.log(item.ID + ': ' + item.Name);
-    }
+function App() {
+    const onValueChanged = useCallback((e) => {
+        console.log(e.previousValue);
+        console.log(e.value);
+    }, []);
 
-    render() {
-        return (
-            <div className="App">
-                <SelectBox
-                    dataSource={dataSource}
-                    valueExpr="ID"
-                    displayExpr="Name"
-                    searchEnabled={true}
-                    onValueChanged={this.onValueChanged}
-                    grouped={true}
-                    dropDownOptions={dropDownOptions}
-                />
-            </div>
-        );
-    }
+    return (
+        <div className="App">
+            <SelectBox
+                dataSource={dataSource}
+                valueExpr="ID"
+                displayExpr="Name"
+                searchEnabled={true}
+                onValueChanged={onValueChanged}
+                grouped={true}
+                dropDownOptions={dropDownOptions}
+            />
+        </div>
+    );
 }
 
 export default App;
+

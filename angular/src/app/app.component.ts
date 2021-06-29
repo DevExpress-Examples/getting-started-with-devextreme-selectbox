@@ -29,7 +29,7 @@ export class AppComponent {
     }
 
     onValueChanged(e) {
-        const item = this.data.filter((i) => i.ID === e.value)[0];
-        console.log(item.ID + ': ' + item.Name);
+        console.log(e.previousValue);
+        console.log(e.value);
     }
 }
