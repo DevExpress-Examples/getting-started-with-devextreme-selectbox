@@ -1,4 +1,6 @@
-# gs-selectbox
+# Getting Started with DevExtreme Vue SelectBox
+
+This repository stores Vue source code for the [Getting Started with SelectBox](https://js.devexpress.com/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/) tutorial.
 
 ## Project setup
 ```

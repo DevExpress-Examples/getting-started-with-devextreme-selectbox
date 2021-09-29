@@ -3,9 +3,6 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T964174)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# getting-started-with-selectbox
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/278103009/)**
-<!-- run online end -->
+# Getting Started with DevExtreme SelectBox
 
-This repository stores the source code for [the Getting Started with SelectBox tutorial](https://js.devexpress.com/Documentation/Guide/Widgets/SelectBox/Getting_Started_with_SelectBox/).
+This repository stores the source code for the [Getting Started with SelectBox](https://js.devexpress.com/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/) tutorial.

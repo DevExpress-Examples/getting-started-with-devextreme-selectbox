@@ -1,4 +1,6 @@
-# getting-started-with-select-box
+# Getting Started with DevExtreme Angular SelectBox
+
+This repository stores Angular source code for the [Getting Started with SelectBox](https://js.devexpress.com/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/) tutorial.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.10.
 
