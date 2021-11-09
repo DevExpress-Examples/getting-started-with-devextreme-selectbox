@@ -46,6 +46,8 @@ $(function () {
             console.log(e.value);
         },
         grouped: true,
+        label: 'Product',
+        labelMode: 'floating',
         dropDownOptions: {
             height: 150
         }

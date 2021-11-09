@@ -1,6 +1,5 @@
 import { useCallback } from 'react';
 
-import 'devextreme/dist/css/dx.common.css';
 import 'devextreme/dist/css/dx.light.css';
 import React from 'react';
 import './App.css';
@@ -37,6 +36,8 @@ function App() {
                 displayExpr="Name"
                 searchEnabled={true}
                 onValueChanged={onValueChanged}
+                label="Product"
+                labelMode="floating"
                 grouped={true}
                 dropDownOptions={dropDownOptions}
             />

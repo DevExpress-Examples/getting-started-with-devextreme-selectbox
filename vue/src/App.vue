@@ -6,6 +6,8 @@
             display-expr="Name"
             :search-enabled="true"
             @value-changed="onValueChange"
+            label="Product"
+            label-mode="floating"
             :grouped="true"
             :drop-down-options="dropDownOptions"
         />
@@ -53,6 +55,5 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
 }
 </style>
