@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # DevExtreme SelectBox - Getting Started
 
-This repository stores the code examples of the SelectBox component for the [Getting Started with SelectBox](https://js.devexpress.com/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/) tutorial. The created UI component has a populated drop-down list, allows users to search through it, and logs the previous and current selected items to the console.
+This repository stores the code examples of the SelectBox component for the [Getting Started with SelectBox](https://js.devexpress.com/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/) tutorial. The created UI component has a populated drop-down list, allows users to search through it, and logs the previous and current selected items in the console.
 
 <div align="center"><img src="./selectbox.png" /></div>
 
