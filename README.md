@@ -8,19 +8,19 @@
 
 This repository stores the code examples of the SelectBox component for the [Getting Started with SelectBox](https://js.devexpress.com/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/) tutorial. The created UI component has a populated drop-down list, allows users to search through it, and logs the previous and current selected items in the console.
 
-<div align="center"><img src="./selectbox.png" /></div>
+<div align="center"><img src="images/selectbox.png" /></div>
 
 ## Files to Review
 
 - **Angular**
-    - [app.component.html](angular/src/app/app.component.html)
-    - [app.component.ts](angular/src/app/app.component.ts)
+    - [app.component.html](Angular/src/app/app.component.html)
+    - [app.component.ts](Angular/src/app/app.component.ts)
 - **jQuery**
-    - [index.js](jquery/index.js)
+    - [index.js](jQuery/index.js)
 - **React**
-    - [App.js](react/src/App.js)
+    - [App.js](React/src/App.js)
 - **Vue**
-    - [App.vue](vue/src/App.vue)
+    - [App.vue](Vue/src/App.vue)
 
 ## Documentation
 
