@@ -12,15 +12,17 @@ This repository stores the code examples of the SelectBox component for the [Get
 
 ## Files to Review
 
+- **jQuery**
+    - [index.html](jQuery/src/index.html)
+    - [index.js](jQuery/src/index.js)
 - **Angular**
     - [app.component.html](Angular/src/app/app.component.html)
     - [app.component.ts](Angular/src/app/app.component.ts)
-- **jQuery**
-    - [index.js](jQuery/index.js)
 - **React**
-    - [App.js](React/src/App.js)
+    - [App.tsx](React/src/App.tsx)
 - **Vue**
     - [App.vue](Vue/src/App.vue)
+    - [SelectBoxContent.vue](Vue/src/components/SelectBoxContent.vue)
 
 ## Documentation
 

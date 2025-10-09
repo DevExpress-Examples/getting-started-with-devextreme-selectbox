@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import HomeContent from '../components/HomeContent.vue';
+import SelectBoxContent from '../components/SelectBoxContent.vue';
 </script>
 
 <template>
-  <HomeContent text="Count"/>
+  <SelectBoxContent/>
 </template>
 

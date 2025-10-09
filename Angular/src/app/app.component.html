@@ -1,3 +1,12 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
-</div>
+<dx-select-box
+  [dataSource]="dataSource"
+  valueExpr="ID"
+  displayExpr="Name"
+  [searchEnabled]="true"
+  (onValueChanged)="onValueChanged($event)"
+  label="Product"
+  labelMode="floating"
+  [grouped]="true"
+  [dropDownOptions]="dropDownOptions"
+>
+</dx-select-box>
