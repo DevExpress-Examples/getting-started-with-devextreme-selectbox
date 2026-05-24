@@ -5,9 +5,10 @@ import { DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
 import { Item } from './app.types';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent {
   dataSource: DataSource;
