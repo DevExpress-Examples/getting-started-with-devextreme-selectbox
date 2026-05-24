@@ -4,11 +4,13 @@ import notify from 'devextreme/ui/notify';
 import { DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
 import { Item } from './app.types';
 
+import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
+
 @Component({
     selector: 'app-root',
+    imports: [DxSelectBoxModule],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
 })
 export class AppComponent {
   dataSource: DataSource;
