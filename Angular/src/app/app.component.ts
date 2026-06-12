@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import DataSource from 'devextreme/data/data_source';
 import notify from 'devextreme/ui/notify';
 import { DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
@@ -10,6 +10,7 @@ import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
     selector: 'app-root',
     imports: [DxSelectBoxModule],
     templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
