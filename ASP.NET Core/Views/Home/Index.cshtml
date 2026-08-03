@@ -1,0 +1,26 @@
+@(Html.DevExtreme().SelectBox()
+    .DataSource(d => d
+        .Mvc().Controller("SelectBoxData")
+        .LoadAction("Get")
+        .Key("ID")
+    )
+    .DataSourceOptions(o => o.Group("Category"))
+    .ValueExpr("ID")
+    .DisplayExpr("Name")
+    .SearchEnabled(true)
+    .OnValueChanged("handleValueChanged")
+    .Grouped(true)
+    .Label("Product")
+    .LabelMode(EditorLabelMode.Floating)
+    .DropDownOptions(o => o.Height(150))
+)
+
+<script>
+    function handleValueChanged(e) {
+        DevExpress.ui.notify(
+            `Previous Value: ${e.previousValue}, Current Value: ${e.value}`,
+            'info',
+            2000,
+        );
+    }
+</script>
