@@ -46,10 +46,6 @@ const dataSource = new DataSource({
   group: 'Category',
 });
 
-const dropDownOptions = {
-  height: 150,
-};
-
 function App(): JSX.Element {
   const onValueChanged = useCallback((e: SelectBoxTypes.ValueChangedEvent) => {
     notify(
