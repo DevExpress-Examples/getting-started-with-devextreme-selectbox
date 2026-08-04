@@ -27,8 +27,6 @@
     <Copy SourceFiles="@(JSFiles)" DestinationFolder="$(WwwRootDir)js\" SkipUnchangedFiles="true" />
 
     <ItemGroup>
-      <CSSFiles Include="$(NodeModulesDir)bootstrap\dist\css\bootstrap.css" />
-      <CSSFiles Include="$(NodeModulesDir)devextreme-dist\css\dx.common.css" />
       <CSSFiles Include="$(NodeModulesDir)devextreme-dist\css\dx.fluent.blue.light.css" />
     </ItemGroup>
     <Copy SourceFiles="@(CSSFiles)" DestinationFolder="$(WwwRootDir)css\" SkipUnchangedFiles="true" />
