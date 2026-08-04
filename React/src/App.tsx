@@ -1,10 +1,12 @@
 import { useCallback } from 'react';
+
 import './App.css';
-import 'devextreme/dist/css/dx.material.blue.light.compact.css';
-import SelectBox from 'devextreme-react/select-box';
-import DataSource from 'devextreme/data/data_source';
+import 'devextreme/dist/css/dx.fluent.blue.light.css';
+
+import { SelectBox, DropDownOptions, type SelectBoxTypes } from 'devextreme-react/select-box';
+import { DataSource } from 'devextreme-react/common/data';
 import notify from 'devextreme/ui/notify';
-import type { SelectBoxTypes } from 'devextreme-react/select-box';
+
 import type { Item } from './types';
 
 const data: Item[] = [
@@ -68,8 +70,9 @@ function App(): JSX.Element {
         label="Product"
         labelMode="floating"
         grouped={true}
-        dropDownOptions={dropDownOptions}
-      />
+      >
+        <DropDownOptions height={150} />
+      </SelectBox>
     </div>
   );
 }

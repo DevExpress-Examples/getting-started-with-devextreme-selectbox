@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import 'devextreme/dist/css/dx.material.blue.light.compact.css';
-import DxSelectBox from 'devextreme-vue/select-box';
-import DataSource from 'devextreme/data/data_source';
+import 'devextreme/dist/css/dx.fluent.blue.light.css';
+
+import { DxSelectBox, DxDropDownOptions, type DxSelectBoxTypes } from 'devextreme-vue/select-box';
+import { DataSource } from 'devextreme-vue/common/data';
 import notify from 'devextreme/ui/notify';
-import type { DxSelectBoxTypes } from 'devextreme-vue/select-box';
+
 import type { Item } from '../types';
 
 const data: Item[] = [
@@ -43,10 +44,6 @@ const dataSource = new DataSource({
   group: 'Category',
 });
 
-const dropDownOptions = {
-  height: 150,
-};
-
 const onValueChanged = (e: DxSelectBoxTypes.ValueChangedEvent): void => {
   notify(
     `Previous Value: ${e.previousValue}, Current Value: ${e.value}`,
@@ -66,8 +63,9 @@ const onValueChanged = (e: DxSelectBoxTypes.ValueChangedEvent): void => {
       label="Product"
       label-mode="floating"
       :grouped="true"
-      :drop-down-options="dropDownOptions"
-    />
+    >
+      <DxDropDownOptions :height="150" />
+    </DxSelectBox>
   </div>
 </template>
 
