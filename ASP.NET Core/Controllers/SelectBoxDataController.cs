@@ -1,5 +1,3 @@
-using System.Linq;
-using System.Text.Json;
 using ASP_NET_Core.Models;
 using DevExtreme.AspNet.Data;
 using DevExtreme.AspNet.Mvc;
