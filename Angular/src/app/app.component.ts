@@ -1,10 +1,10 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import DataSource from 'devextreme/data/data_source';
-import notify from 'devextreme/ui/notify';
-import { DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
-import { Item } from './app.types';
 
-import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
+import { DxSelectBoxModule, type DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
+import { DataSource } from 'devextreme-angular/common/data';
+import notify from 'devextreme/ui/notify';
+
+import { Item } from './app.types';
 
 @Component({
     selector: 'app-root',
@@ -15,10 +15,7 @@ import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
 })
 export class AppComponent {
   dataSource: DataSource;
-
   data: Item[];
-
-  dropDownOptions: { height: number };
 
   constructor() {
     this.data = [
@@ -57,10 +54,6 @@ export class AppComponent {
       },
       group: 'Category',
     });
-
-    this.dropDownOptions = {
-      height: 150,
-    };
   }
 
   onValueChanged(e: DxSelectBoxTypes.ValueChangedEvent): void {
